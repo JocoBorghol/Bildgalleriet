@@ -1,3 +1,9 @@
+import {
+  filterImages,
+  sortByOrientation,
+  getVisibleImages
+} from "./utils/gallery-utils.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   // DOM-referenser
   const galleryGrid = document.getElementById("galleryGrid");
@@ -34,25 +40,29 @@ document.addEventListener("DOMContentLoaded", () => {
     "Naturens rytm"
   ];
 
-  // Ladda JSON-data
+  // Hämta JSON-data
   fetch("data/gallery.json")
-    .then(res => res.json())
-    .then(images => {
-      allImages = category
-        ? images.filter(img => img.category === category)
-        : images;
+  .then(res => res.json())
+  .then(images => {
+    const categoryImages = category
+      ? images.filter(img => img.category === category)
+      : images;
 
-      filteredImages = [...allImages].sort(sortByOrientation);
+    allImages = categoryImages;
+    filteredImages = [...categoryImages].sort(sortByOrientation);
 
-      renderTags(allImages);
-      renderGallery();
-    });
+    renderTags(categoryImages); // ✅ endast taggar för aktuell kategori
+    renderGallery();
+  });
+
 
   // Rendera galleri
   function renderGallery() {
     galleryGrid.innerHTML = "";
 
-    filteredImages.slice(0, visibleCount).forEach((img, index) => {
+    const visibleImages = getVisibleImages(filteredImages, visibleCount);
+
+    visibleImages.forEach((img, index) => {
       const isNew = index >= visibleCount - IMAGES_PER_BATCH;
 
       const link = document.createElement("a");
@@ -132,30 +142,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // Uppdatera aktiv tagg
   function updateActiveTag() {
     document.querySelectorAll(".tag").forEach(btn => {
-      btn.classList.remove("active");
-      if (btn.textContent === activeTag) {
-        btn.classList.add("active");
-      }
+      btn.classList.toggle("active", btn.textContent === activeTag);
     });
   }
 
-  // Applicera filter
+  // Applicera filter (NU VIA utils)
   function applyFilters() {
-    const q = searchInput?.value.toLowerCase().trim() || "";
-
-    filteredImages = allImages.filter(img => {
-      const tagMatch =
-        activeTag === null ||
-        img.tags.some(t => t.toLowerCase() === activeTag.toLowerCase());
-
-      const searchMatch =
-        q === "" ||
-        img.tags.some(t => t.toLowerCase().includes(q));
-
-      return tagMatch && searchMatch;
-    });
-
-    filteredImages.sort(sortByOrientation);
+    filteredImages = filterImages(allImages, {
+      category,
+      activeTag,
+      query: searchInput?.value || ""
+    }).sort(sortByOrientation);
 
     visibleCount = IMAGES_PER_BATCH;
     renderGallery();
@@ -163,12 +160,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (loadMoreMessage) {
       loadMoreMessage.textContent = "";
     }
-  }
-
-  // Sortera efter orientering
-  function sortByOrientation(a, b) {
-    if (a.orientation === b.orientation) return 0;
-    return a.orientation === "portrait" ? -1 : 1;
   }
 
   // Återställ filter

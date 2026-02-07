@@ -1,0 +1,23 @@
+{
+  "name": "bildgalleriet",
+  "version": "1.0.0",
+  "description": "Ett responsivt bildgalleri byggt med HTML, CSS och JavaScript.",
+  "type": "module",
+  "scripts": {
+  "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JocoBorghol/Bildgalleriet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JocoBorghol/Bildgalleriet/issues"
+  },
+  "homepage": "https://github.com/JocoBorghol/Bildgalleriet#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
