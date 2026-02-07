@@ -191,9 +191,11 @@ main {
 .page-intro h1::after {
   content: "";
   display: block;
-  width: 800px;
   height: 2px;
   margin: 14px auto 0;
+
+  width: 100%;
+  max-width: 640px;
 
   background: linear-gradient(
     to right,
@@ -852,6 +854,12 @@ main {
     transform: translateY(0);
   }
 }
+
+.page-intro {
+  width: 100%;
+  max-width: 720px;
+}
+
 
 /* Surfplatta */
 @media (min-width: 600px) {
