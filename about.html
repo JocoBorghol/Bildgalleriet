@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om Bildgalleriet</title>
+  <script>
+  document.documentElement.setAttribute("data-theme", "dark");
+</script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Sidhuvud -->
+  <header class="site-header">
+
+    <!-- Knapp för temaväxling -->
+    <button
+      id="themeToggle"
+      class="icon-button theme-toggle"
+      aria-label="Växla tema">
+      🌙
+    </button>
+
+    <button
+      id="sideNavToggle"
+      class="icon-button side-nav-toggle"
+      aria-label="Visa eller dölj sidomeny"
+      aria-expanded="true">
+      ☰
+    </button>
+
+    <!-- Mobilnavigation -->
+    <nav class="mobile-nav" aria-label="Navigation">
+      <a href="index.html">Galleri</a>
+      <a href="jellyfish.html">Maneter</a>
+      <a href="penguin.html">Pingviner</a>
+      <a href="parrot.html">Papegojor</a>
+      <a href="eagle.html">Örnar</a>
+      <a href="about.html" aria-current="page">Om sidan</a>
+    </nav>
+
+  </header>
+
+  <!-- Sidlayout -->
+  <div class="layout">
+
+    <!-- Sidomeny (desktop) -->
+    <aside class="side-nav">
+      <nav aria-label="Huvudnavigation">
+        <a href="index.html">Galleri</a>
+        <a href="jellyfish.html">Maneter</a>
+        <a href="penguin.html">Pingviner</a>
+        <a href="parrot.html">Papegojor</a>
+        <a href="eagle.html">Örnar</a>
+        
+        <a href="about.html" class="nav-about" aria-current="page">Om sidan</a>
+      </nav>
+    </aside>
+
+    <!-- Huvudinnehåll -->
+    <main>
+
+  <section class="page-intro">
+    <h1>Om Bildgalleriet</h1>
+
+    <p>
+      Bildgalleriet är en digital plattform för visning och
+      organisering av bilder
+    </p>
+
+  </section>
+
+  <section class="page-intro tech-section">
+    <h2>Funktionalitet</h2>
+    
+    <p>
+      Bildgalleriet erbjuder kategoribaserad navigering med stöd för
+      filtrering via taggar och sökfält. Gränssnittet är responsivt och
+      anpassat för både mobil och desktop, med möjlighet att växla mellan
+      ljust och mörkt tema. Bildhanteringen är optimerad för god prestanda
+      och snabb laddning
+    </p>
+
+  </section>
+
+  <section class="page-intro">
+    <h2>Struktur</h2>
+
+    <p>
+      Innehållet är uppbyggt på ett sätt som möjliggör
+      enkel utökning med fler kategorier och bilder
+    </p>
+  </section>
+
+  <section class="page-section">
+  <h2>Kontakt</h2>
+
+  <p>
+    Plattformen förvaltas av ansvarig utvecklare. För frågor,
+    återkoppling eller vidare information kan kontakt tas via
+    nedanstående kanaler.
+  </p>
+
+  <p>
+    Telefon:
+    <a href="tel:+46704607502">070 460 75 02</a>
+  </p>
+
+  <p>
+    E-post:
+    <a href="mailto:joco.borghol@gmail.com">
+      joco.borghol@gmail.com
+    </a>
+  </p>
+
+  <p>
+    LinkedIn:
+    <a
+      href="https://www.linkedin.com/in/joco-borghol-777b59386"
+      target="_blank"
+      rel="noopener noreferrer">
+      Joco Borghol
+    </a>
+  </p>
+
+  <p>
+    GitHub:
+    <a
+      href="https://github.com/JocoBorghol"
+      target="_blank"
+      rel="noopener noreferrer">
+      github.com/JocoBorghol
+    </a>
+  </p>
+</section>
+
+
+
+
+</main>
+
+  </div>
+
+  <!-- Sidfot -->
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2025 Bildgalleriet</p>
+  </div>
+</footer>
+
+
+  <!-- Script för temaväxling -->
+  <script src="js/theme.js"></script>
+  <script src="js/side-nav-toggle.js"></script>
+
+</body>
+</html>

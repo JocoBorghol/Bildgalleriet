@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kategori 2 - Bildgalleriet</title>
+  <script>
+  document.documentElement.setAttribute("data-theme", "dark");
+</script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-category="penguin">
+
+  <!-- Header -->
+  <header class="site-header">
+
+    <!-- Temaknapp -->
+    <button
+      id="themeToggle"
+      class="icon-button theme-toggle"
+      aria-label="Växla tema">
+      🌙
+    </button>
+
+    <button
+      id="sideNavToggle"
+      class="icon-button side-nav-toggle"
+      aria-label="Visa eller dölj sidomeny"
+      aria-expanded="true">
+      ☰
+    </button>
+
+    <!-- Mobilnavigation -->
+    <nav class="mobile-nav" aria-label="Kategorier">
+      <a href="index.html">Galleri</a>
+      <a href="jellyfish.html">Maneter</a>
+      <a href="penguin.html" aria-current="page">Pingviner</a>
+      <a href="parrot.html">Papegojor</a>
+      <a href="eagle.html">Örnar</a>
+    </nav>
+
+  </header>
+
+  <!-- Sidlayout -->
+  <div class="layout">
+
+    <!-- Sidomeny (desktop) -->
+    <aside class="side-nav">
+      <nav aria-label="Huvudnavigation">
+        <a href="index.html">Galleri</a>
+        <a href="jellyfish.html">Maneter</a>
+        <a href="penguin.html" aria-current="page">Pingviner</a>
+        <a href="parrot.html">Papegojor</a>
+        <a href="eagle.html">Örnar</a>
+
+        <a href="about.html" class="nav-about">Om sidan</a>
+      </nav>
+    </aside>
+
+    <!-- Huvudinnehåll -->
+    <main>
+
+      <section class="page-intro">
+        <h1>Penguin</h1>
+        <p>Bilder som visar både vardag och rörelse i några av världens mest karga miljöer</p>
+      </section>
+
+      <!-- Filter och sök -->
+      <div class="gallery-controls">
+
+  <div class="search-row">
+    <input
+      type="search"
+      id="searchInput"
+      placeholder="Sök bilder..."
+      aria-label="Sök bilder"
+    />
+
+    <button
+      id="toggleTagsBtn"
+      type="button"
+      aria-expanded="false"
+      aria-controls="tagFilters"
+      class="toggle-tags-btn"
+    >
+      Taggar
+    </button>
+  </div>
+
+  <div id="tagFilters" class="tag-filters is-hidden"></div>
+
+  <button
+  id="resetFiltersBtn"
+  type="button"
+  class="reset-filters-btn is-hidden"
+>
+  Rensa filter
+</button>
+
+      <!-- Galleri -->
+      <section class="gallery" data-category="penguin">
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </section>
+
+      <!-- Ladda fler -->
+      <button id="loadMoreBtn" type="button">
+        Ladda fler bilder
+      </button>
+
+      <p id="loadMoreMessage" aria-live="polite"></p>
+
+    </main>
+  </div>
+
+   <footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2025 Bildgalleriet</p>
+  </div>
+</footer>
+
+  <script src="js/gallery.js" defer></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/side-nav-toggle.js" defer></script>
+  <script src="js/tag.toggle.js" defer></script>
+</body>
+</html>

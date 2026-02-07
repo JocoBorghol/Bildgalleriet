@@ -1,0 +1,365 @@
+[
+  {
+    "id": "jellyfish-01",
+    "category": "jellyfish",
+    "orientation": "portrait",
+    "src": "images/jellyfish/thumb/jellyfish-01.webp",
+    "alt": "Glödande manet i mörkt vatten",
+    "tags": ["manet", "hav", "undervatten", "marin"],
+    "text": "Ett stilla ljus som svävar genom mörkret."
+  },
+  {
+    "id": "jellyfish-02",
+    "category": "jellyfish",
+    "orientation": "portrait",
+    "src": "images/jellyfish/thumb/jellyfish-02.webp",
+    "alt": "Manet med långa tentakler",
+    "tags": ["manet", "hav", "vatten", "marin"],
+    "text": "Rörelser som följer strömmarna, inte tiden."
+  },
+  {
+    "id": "jellyfish-03",
+    "category": "jellyfish",
+    "orientation": "portrait",
+    "src": "images/jellyfish/thumb/jellyfish-03.webp",
+    "alt": "Manet mot blå bakgrund",
+    "tags": ["manet", "blå", "hav", "undervatten"],
+    "text": "Svävande i ett oändligt blått."
+  },
+  {
+    "id": "jellyfish-04",
+    "category": "jellyfish",
+    "orientation": "portrait",
+    "src": "images/jellyfish/thumb/jellyfish-04.webp",
+    "alt": "Grupp av maneter",
+    "tags": ["manet", "grupp", "hav", "marin"],
+    "text": "Tillsammans, men utan brådska."
+  },
+  {
+    "id": "jellyfish-05",
+    "category": "jellyfish",
+    "orientation": "portrait",
+    "src": "images/jellyfish/thumb/jellyfish-05.webp",
+    "alt": "Orange manet i mjukt ljus",
+    "tags": ["manet", "orange", "hav", "undervatten"],
+    "text": "Värme som glöder långt under ytan."
+  },
+  {
+    "id": "jellyfish-06",
+    "category": "jellyfish",
+    "orientation": "landscape",
+    "src": "images/jellyfish/thumb/jellyfish-06.webp",
+    "alt": "Manet som simmar i blått vatten",
+    "tags": ["manet", "blå", "vatten", "marin"],
+    "text": "Ett liv utan tyngd, bara riktning."
+  },
+  {
+    "id": "jellyfish-07",
+    "category": "jellyfish",
+    "orientation": "portrait",
+    "src": "images/jellyfish/thumb/jellyfish-07.webp",
+    "alt": "Liten manet i djuphavet",
+    "tags": ["manet", "djuphav", "hav", "marin"],
+    "text": "Liten i form, stor i känsla."
+  },
+  {
+    "id": "jellyfish-08",
+    "category": "jellyfish",
+    "orientation": "portrait",
+    "src": "images/jellyfish/thumb/jellyfish-08.webp",
+    "alt": "Lysande blå manet",
+    "tags": ["manet", "ljus", "blå", "undervatten"],
+    "text": "Ett eget ljus i det djupaste blå."
+  },
+  {
+    "id": "jellyfish-09",
+    "category": "jellyfish",
+    "orientation": "landscape",
+    "src": "images/jellyfish/thumb/jellyfish-09.webp",
+    "alt": "Ensamt flytande manetdjur",
+    "tags": ["manet", "ensam", "hav", "marin"],
+    "text": "Ensamt, men aldrig fel."
+  },
+  {
+    "id": "jellyfish-10",
+    "category": "jellyfish",
+    "orientation": "portrait",
+    "src": "images/jellyfish/thumb/jellyfish-10.webp",
+    "alt": "Manet i varma färgtoner",
+    "tags": ["manet", "varm", "hav", "undervatten"],
+    "text": "Färger som rör sig långsamt genom tystnad."
+  },
+
+  {
+    "id": "eagle-01",
+    "category": "eagle",
+    "orientation": "landscape",
+    "src": "images/eagle/thumb/eagle-01.webp",
+    "alt": "Örn i flykt",
+    "tags": ["örn", "fågel", "flykt", "vildmark"],
+    "text": "Frihet med tydlig riktning."
+  },
+  {
+    "id": "eagle-02",
+    "category": "eagle",
+    "orientation": "landscape",
+    "src": "images/eagle/thumb/eagle-02.webp",
+    "alt": "Örn glidflyger över vatten",
+    "tags": ["örn", "fågel", "glidflykt", "natur"],
+    "text": "Svävar lugnt, som om vinden bär allt."
+  },
+  {
+    "id": "eagle-03",
+    "category": "eagle",
+    "orientation": "landscape",
+    "src": "images/eagle/thumb/eagle-03.webp",
+    "alt": "Örn mot himmel",
+    "tags": ["örn", "fågel", "himmel", "flykt"],
+    "text": "Högt över vardagen."
+  },
+  {
+    "id": "eagle-04",
+    "category": "eagle",
+    "orientation": "portrait",
+    "src": "images/eagle/thumb/eagle-04.webp",
+    "alt": "Örn sittande i skugga",
+    "tags": ["örn", "fågel", "sittande", "vildmark"],
+    "text": "Väntar, men är redan redo."
+  },
+  {
+    "id": "eagle-05",
+    "category": "eagle",
+    "orientation": "portrait",
+    "src": "images/eagle/thumb/eagle-05.webp",
+    "alt": "Porträtt av vithövdad örn",
+    "tags": ["örn", "porträtt", "fågel", "rovdjur"],
+    "text": "Blicken som ser längre än horisonten."
+  },
+  {
+    "id": "eagle-06",
+    "category": "eagle",
+    "orientation": "landscape",
+    "src": "images/eagle/thumb/eagle-06.webp",
+    "alt": "Örn som svävar högt",
+    "tags": ["örn", "fågel", "sväva", "natur"],
+    "text": "Tyst kraft, långt där uppe."
+  },
+  {
+    "id": "eagle-07",
+    "category": "eagle",
+    "orientation": "landscape",
+    "src": "images/eagle/thumb/eagle-07.webp",
+    "alt": "Örn över berg",
+    "tags": ["örn", "fågel", "berg", "vildmark"],
+    "text": "Vidder som känns i bröstet."
+  },
+  {
+    "id": "eagle-08",
+    "category": "eagle",
+    "orientation": "portrait",
+    "src": "images/eagle/thumb/eagle-08.webp",
+    "alt": "Närbild på örn",
+    "tags": ["örn", "närbild", "fågel", "porträtt"],
+    "text": "Detaljerna som gör allt."
+  },
+  {
+    "id": "eagle-09",
+    "category": "eagle",
+    "orientation": "landscape",
+    "src": "images/eagle/thumb/eagle-09.webp",
+    "alt": "Örn landar i träd",
+    "tags": ["örn", "fågel", "landning", "natur"],
+    "text": "Precision, ner på millimetern."
+  },
+  {
+    "id": "eagle-10",
+    "category": "eagle",
+    "orientation": "landscape",
+    "src": "images/eagle/thumb/eagle-10.webp",
+    "alt": "Örn med utbredda vingar",
+    "tags": ["örn", "fågel", "vingar", "flykt"],
+    "text": "Vingar som fyller hela rummet."
+  },
+
+  {
+    "id": "parrot-01",
+    "category": "parrot",
+    "orientation": "portrait",
+    "src": "images/parrot/thumb/parrot-01.webp",
+    "alt": "Grön papegoja på gren",
+    "tags": ["papegoja", "fågel", "grön", "tropisk"],
+    "text": "Grön som om den hör hemma i bladverket."
+  },
+  {
+    "id": "parrot-02",
+    "category": "parrot",
+    "orientation": "portrait",
+    "src": "images/parrot/thumb/parrot-02.webp",
+    "alt": "Blågul ara",
+    "tags": ["papegoja", "ara", "färgstark", "fågel"],
+    "text": "Färger som tar över hela bilden."
+  },
+  {
+    "id": "parrot-03",
+    "category": "parrot",
+    "orientation": "portrait",
+    "src": "images/parrot/thumb/parrot-03.webp",
+    "alt": "Liten papegoja på pinne",
+    "tags": ["papegoja", "fågel", "sittande", "natur"],
+    "text": "En liten paus mitt i allt."
+  },
+  {
+    "id": "parrot-04",
+    "category": "parrot",
+    "orientation": "portrait",
+    "src": "images/parrot/thumb/parrot-04.webp",
+    "alt": "Blå papegoja i naturligt ljus",
+    "tags": ["papegoja", "blå", "fågel", "tropisk"],
+    "text": "Blått som känns nästan overkligt."
+  },
+  {
+    "id": "parrot-05",
+    "category": "parrot",
+    "orientation": "portrait",
+    "src": "images/parrot/thumb/parrot-05.webp",
+    "alt": "Gul papegoja porträtt",
+    "tags": ["papegoja", "gul", "porträtt", "fågel"],
+    "text": "Ett ögonblick av ren nyfikenhet."
+  },
+  {
+    "id": "parrot-06",
+    "category": "parrot",
+    "orientation": "landscape",
+    "src": "images/parrot/thumb/parrot-06.webp",
+    "alt": "Papegoja med utbredda vingar",
+    "tags": ["papegoja", "fågel", "vingar", "flykt"],
+    "text": "Rörelse som nästan går att höra."
+  },
+  {
+    "id": "parrot-07",
+    "category": "parrot",
+    "orientation": "portrait",
+    "src": "images/parrot/thumb/parrot-07.webp",
+    "alt": "Papegoja bland gröna blad",
+    "tags": ["papegoja", "fågel", "natur", "grön"],
+    "text": "Gömmer sig, men syns ändå."
+  },
+  {
+    "id": "parrot-08",
+    "category": "parrot",
+    "orientation": "landscape",
+    "src": "images/parrot/thumb/parrot-08.webp",
+    "alt": "Flygande papegoja",
+    "tags": ["papegoja", "fågel", "flykt", "rörelse"],
+    "text": "Som en färgklick som passerar förbi."
+  },
+  {
+    "id": "parrot-09",
+    "category": "parrot",
+    "orientation": "portrait",
+    "src": "images/parrot/thumb/parrot-09.webp",
+    "alt": "Två röda papegojor",
+    "tags": ["papegoja", "par", "röd", "fågel"],
+    "text": "Två som säger allt utan ord."
+  },
+  {
+    "id": "parrot-10",
+    "category": "parrot",
+    "orientation": "portrait",
+    "src": "images/parrot/thumb/parrot-10.webp",
+    "alt": "Färgglad papegoja vid mur",
+    "tags": ["papegoja", "färgstark", "fågel", "stad"],
+    "text": "Färgstark, även när världen är grå."
+  },
+
+  {
+    "id": "penguin-01",
+    "category": "penguin",
+    "orientation": "landscape",
+    "src": "images/penguin/thumb/penguin-01.webp",
+    "alt": "Pingviner vid strand",
+    "tags": ["pingvin", "fågel", "strand", "antarktis"],
+    "text": "Lugnet innan nästa steg."
+  },
+  {
+    "id": "penguin-02",
+    "category": "penguin",
+    "orientation": "portrait",
+    "src": "images/penguin/thumb/penguin-02.webp",
+    "alt": "Två pingviner tillsammans",
+    "tags": ["pingvin", "par", "is", "fågel"],
+    "text": "Närheten som värmer mer än solen."
+  },
+  {
+    "id": "penguin-03",
+    "category": "penguin",
+    "orientation": "portrait",
+    "src": "images/penguin/thumb/penguin-03.webp",
+    "alt": "Pingvin går på sand",
+    "tags": ["pingvin", "gång", "strand", "fågel"],
+    "text": "Ett steg i taget, alltid framåt."
+  },
+  {
+    "id": "penguin-04",
+    "category": "penguin",
+    "orientation": "portrait",
+    "src": "images/penguin/thumb/penguin-04.webp",
+    "alt": "Pingvin med öppna vingar",
+    "tags": ["pingvin", "vingar", "fågel", "is"],
+    "text": "Som om den provar vinden."
+  },
+  {
+    "id": "penguin-05",
+    "category": "penguin",
+    "orientation": "portrait",
+    "src": "images/penguin/thumb/penguin-05.webp",
+    "alt": "Pingvin vid kust",
+    "tags": ["pingvin", "kust", "fågel", "kyla"],
+    "text": "Står stadigt där havet tar vid."
+  },
+  {
+    "id": "penguin-06",
+    "category": "penguin",
+    "orientation": "portrait",
+    "src": "images/penguin/thumb/penguin-06.webp",
+    "alt": "Pingvin på klippa",
+    "tags": ["pingvin", "klippa", "fågel", "natur"],
+    "text": "Utsikt, och en liten stund för sig själv."
+  },
+  {
+    "id": "penguin-07",
+    "category": "penguin",
+    "orientation": "landscape",
+    "src": "images/penguin/thumb/penguin-07.webp",
+    "alt": "Pingviner mittemot varandra",
+    "tags": ["pingvin", "par", "fågel", "interaktion"],
+    "text": "Ett samtal utan ord."
+  },
+  {
+    "id": "penguin-08",
+    "category": "penguin",
+    "orientation": "landscape",
+    "src": "images/penguin/thumb/penguin-08.webp",
+    "alt": "Pingvin i solnedgång",
+    "tags": ["pingvin", "solnedgång", "fågel", "landskap"],
+    "text": "En siluett som stannar kvar."
+  },
+  {
+    "id": "penguin-09",
+    "category": "penguin",
+    "orientation": "landscape",
+    "src": "images/penguin/thumb/penguin-09.webp",
+    "alt": "Pingvin i grunt vatten",
+    "tags": ["pingvin", "vatten", "fågel", "strand"],
+    "text": "Mellan land och hav, helt hemma."
+  },
+  {
+    "id": "penguin-10",
+    "category": "penguin",
+    "orientation": "landscape",
+    "src": "images/penguin/thumb/penguin-10.webp",
+    "alt": "Pingvin simmar under vatten",
+    "tags": ["pingvin", "simning", "vatten", "fågel"],
+    "text": "Under ytan är den som snabbast."
+  }
+]

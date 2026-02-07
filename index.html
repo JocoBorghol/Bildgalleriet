@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bildgalleriet</title>
+  <script>
+  document.documentElement.setAttribute("data-theme", "dark");
+</script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Sidhuvud -->
+  <header class="site-header">
+
+    <!-- Knapp för att växla tema -->
+    <button
+      id="themeToggle"
+      class="icon-button theme-toggle"
+      aria-label="Växla tema">
+      🌙
+    </button>
+
+    <button
+      id="sideNavToggle"
+      class="icon-button side-nav-toggle"
+      aria-label="Visa eller dölj sidomeny"
+      aria-expanded="true">
+      ☰
+    </button>
+
+
+    <!-- Mobilnavigation -->
+    <nav class="mobile-nav" aria-label="Kategorier">
+      <a href="index.html" aria-current="page">Galleri</a>
+      <a href="jellyfish.html">Maneter</a>
+      <a href="penguin.html">Pingviner</a>
+      <a href="parrot.html">Papegojor</a>
+      <a href="eagle.html">Örnar</a>
+    </nav>
+
+  </header>
+
+  <!-- Sidlayout -->
+  <div class="layout">
+
+    <!-- Sidomeny (desktop) -->
+    <aside class="side-nav">
+      <nav aria-label="Huvudnavigation">
+        <a href="index.html" aria-current="page">Galleri</a>
+        <a href="jellyfish.html">Maneter</a>
+        <a href="penguin.html">Pingviner</a>
+        <a href="parrot.html">Papegojor</a>
+        <a href="eagle.html">Örnar</a>
+
+        <a href="about.html" class="nav-about">Om sidan</a>
+      </nav>
+    </aside>
+
+    <!-- Huvudinnehåll -->
+    <main>
+
+      <section id="hem" class="page-intro">
+        <h1>Välkommen till Bildgalleriet</h1>
+        <p>Välj en kategori i menyn för att utforska bilderna.</p>
+      </section>
+
+      <!-- Utvalda bilder -->
+      <section class="index-showcase">
+        <div id="showcaseGrid" class="showcase-grid"></div>
+      </section>
+
+    </main>
+
+    <!-- Script för startsidan -->
+    <script src="js/index.js" defer></script>
+
+  </div>
+
+   <footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2025 Bildgalleriet</p>
+  </div>
+</footer>
+
+  <script src="js/gallery.js" defer></script>
+  <script src="js/theme.js"></script>
+  <script src="js/side-nav-toggle.js"></script>
+
+</body>
+</html>
