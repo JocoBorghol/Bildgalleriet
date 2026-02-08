@@ -1,17 +1,23 @@
 // Filtrera bilder baserat på kategori, tagg och sökterm
-export function filterImages(images, { category = null, activeTag = null, query = "" }) {
+export function filterImages(
+  images,
+  { category = null, activeTag = null, query = "" }
+) {
   const q = query.toLowerCase().trim();
 
   return images.filter(img => {
-    const categoryMatch = !category || img.category === category;
+    const tags = Array.isArray(img.tags) ? img.tags : [];
+
+    const categoryMatch =
+      !category || img.category === category;
 
     const tagMatch =
       !activeTag ||
-      img.tags.some(t => t.toLowerCase() === activeTag.toLowerCase());
+      tags.some(t => t.toLowerCase() === activeTag.toLowerCase());
 
     const searchMatch =
       q === "" ||
-      img.tags.some(t => t.toLowerCase().includes(q));
+      tags.some(t => t.toLowerCase().includes(q));
 
     return categoryMatch && tagMatch && searchMatch;
   });

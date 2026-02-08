@@ -48,6 +48,43 @@ describe("gallery-utils", () => {
       const result = filterImages(mockImages, {});
       expect(result).toHaveLength(3);
     });
+
+    test("filters by category and search combined", () => {
+      const result = filterImages(mockImages, {
+        category: "jellyfish",
+        query: "vatten"
+      });
+
+      expect(result).toHaveLength(1);
+      expect(result[0].id).toBe("3");
+    });
+
+    test("returns empty array when no images match", () => {
+      const result = filterImages(mockImages, {
+        query: "finnsinte"
+      });
+
+      expect(result).toEqual([]);
+    });
+
+    test("handles images without tags safely", () => {
+      const badImages = [
+        { id: "x", category: "jellyfish", orientation: "portrait" }
+      ];
+
+      const result = filterImages(badImages, { query: "test" });
+      expect(result).toEqual([]);
+    });
+
+    test("reset filters returns all images", () => {
+      const result = filterImages(mockImages, {
+        category: null,
+        activeTag: null,
+        query: ""
+      });
+
+      expect(result).toHaveLength(3);
+    });
   });
 
   describe("sortByOrientation", () => {
