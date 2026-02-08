@@ -1,20 +1,16 @@
-/* =========================
-   CSS RESET
-   ========================= */
+/* CSS reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Utilities för att dölja element via JS eller tillstånd */
+/* Hjälpklass för att dölja element */
 .is-hidden {
   display: none;
 }
 
-/* =========================
-   FÄRGVARIABLER
-   ========================= */
+/* Färgvariabler */
 :root {
   --blue-900: #0B132B;
   --blue-800: #1C2541;
@@ -32,9 +28,7 @@
   --muted: #9fb1d6;
 }
 
-/* =========================
-   GRUND / TYPOGRAFI
-   ========================= */
+/* Grundtext - teckensnitt, storlek och läsbarhet */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
                "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -44,14 +38,7 @@ body {
   background: var(--bg);
 }
 
-h1 {
-  text-align: center;
-}
-
-
-/* =========================
-   HEADER
-   ========================= */
+/* Header */
 .site-header {
   display: flex;
   align-items: center;
@@ -110,12 +97,7 @@ h1 {
   display: none;
 }
 
-.layout.is-side-nav-hidden main {
-  padding-left: 48px;
-}
-
-/* MOBILNAV */
-/* Header-meny – AVSTÄNGD som default (mobil) */
+/* Mobilnavigation */
 .mobile-nav {
   margin: 0 auto;
   display: flex;
@@ -129,16 +111,18 @@ h1 {
   font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
+  color: rgba(255,255,255,0.75);
   text-decoration: none;
 }
 
-.mobile-nav a:visited {
+.mobile-nav a:hover {
   color: #fff;
 }
 
-.mobile-nav a:hover {
-  color: var(--teal);
+.mobile-nav .nav-gallery {
+  font-weight: 700;
+  color: #fff;
+  margin-right: 4px;
 }
 
 @media (max-width: 360px) {
@@ -151,16 +135,12 @@ h1 {
   border-bottom: 2px solid var(--teal);
 }
 
-/* =========================
-   LAYOUT
-   ========================= */
+/* Layout */
 .layout {
   display: block;
 }
 
-/* =========================
-   MAIN – ALDRIG SKUM
-   ========================= */
+/* Main */
 main {
   width: 100%;
   max-width: 1100px;
@@ -219,9 +199,7 @@ main {
   text-align: center;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
+/* Footer */
 .site-footer {
   background: linear-gradient(
     90deg,
@@ -237,8 +215,44 @@ main {
   padding: 24px 16px;
   text-align: center;
 }
+.footer-copy {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
 
-/* Desktop ≥1024px */
+/* Footer-nav visas bara på mobil och surfplatta */
+.footer-nav {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .footer-nav {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .footer-nav a {
+    font-weight: 600;
+    color: var(--teal);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    padding: 10px 10px;
+  }
+
+  .footer-copy {
+    font-size: 0.8rem;
+  }
+
+  .footer-nav {
+    margin-bottom: 6px;
+  }
+}
+
+
+/* Desktop (1024px och uppåt) */
    @media (min-width: 1024px) {
 
   .layout {
@@ -265,15 +279,13 @@ main {
   }
 }
 
-/* Side nav bas */
+/* Sidonavigation - bas */
 .side-nav {
   display: none; /* dold på mobil */
   overflow: hidden;
 }
 
-/* =========================
-   SIDE NAV – CONTENT
-   ========================= */
+/* Sidonavigation */
 .side-nav nav {
   display: flex;
   flex-direction: column;
@@ -296,9 +308,7 @@ main {
     padding-left 0.2s ease;
 }
 
-/* =========================
-   SIDE NAV – DESKTOP
-   ========================= */
+/* Sidonavigation - desktop */
 @media (min-width: 1024px) {
   .side-nav {
     display: flex;
@@ -322,9 +332,7 @@ main {
 }
 }
 
-/* =========================
-   GALLERI – STABILT
-   ========================= */
+/* Galleri */
 .gallery {
   margin-top: 40px;
 }
@@ -370,7 +378,7 @@ main {
   margin-top: 48px;
 }
 
-/* Mobil – inga bildtexter */
+/* Mobil - inga bildtexter */
 @media (max-width: 599px) {
   .gallery-text {
     display: none;
@@ -381,7 +389,7 @@ main {
   }
 }
 
-/* Surfplatta – mindre bildtext */
+/* Surfplatta - mindre bildtext */
 @media (max-width: 1023px) and (min-width: 600px) {
   .gallery-text {
     font-size: 0.8rem;
@@ -390,14 +398,14 @@ main {
   }
 }
 
-/* Surfplatta */
+/* Surfplatta (600px och uppåt) */
 @media (min-width: 600px) {
   .gallery-grid {
     column-count: 3;
   }
 }
 
-/* Laptop */
+/* Desktop */
 @media (min-width: 1024px) {
   .gallery-grid {
     column-count: 4;
@@ -421,10 +429,7 @@ main {
   }
 }
 
-/* =========================
-   INDEX – SHOWCASE (LAYOUT)
-   ========================= */
-
+/* Index - showcase */
 .index-showcase {
   margin-top: 48px;
 }
@@ -435,7 +440,7 @@ main {
   gap: 24px;
 }
 
-/* Kort-bas */
+/* Showcase-kort */
 .showcase-item img {
   aspect-ratio: 5 / 3;
   width: 100%;
@@ -550,9 +555,7 @@ main {
     0 1px 0 rgba(0,0,0,0.35);
 }
 
-/* =========================
-   GALLERY – INDEX-STIL TEXT
-   ========================= */
+/* Galleri - textoverlay */
 .gallery-item::after {
   content: "";
   position: absolute;
@@ -765,9 +768,7 @@ main {
   border-color: rgba(255,255,255,0.15);
 }
 
-/* =========================
-   RESET FILTER BUTTON
-   ========================= */
+/* Återställ filter */
 #resetFiltersBtn {
   align-self: center;
   padding: 8px 18px;
@@ -806,9 +807,7 @@ main {
   color: var(--text);
 }
 
-/* =========================
-   LOAD BUTTON
-   ========================= */
+/* Ladda fler-knapp */
 #loadMoreBtn {
   display: block;
   margin: 48px auto 0;
@@ -847,17 +846,13 @@ main {
   text-align: center;
 }
 
-
-
 @media (max-width: 599px) {
   .showcase-content {
     display: none;
   }
 }
 
-/* =========================
-   GALLERY LOAD ANIMATION
-   ========================= */
+/* Animation för galleri */
 .gallery-item {
   opacity: 1;
   transform: translateY(0);
@@ -883,7 +878,7 @@ main {
 }
 
 
-/* Surfplatta */
+/* Surfplatta (600px och uppåt) */
 @media (min-width: 600px) {
   .page-intro h1 {
     font-size: 2.1rem;
@@ -967,8 +962,6 @@ main {
     padding: 0.6rem 0.9rem;
     font-size: 0.9rem;
   }
-
- 
 }
 
 
