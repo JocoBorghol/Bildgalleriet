@@ -281,7 +281,7 @@ main {
 
 /* Sidonavigation - bas */
 .side-nav {
-  display: none; /* dold på mobil */
+  display: none;
   overflow: hidden;
 }
 
@@ -312,7 +312,7 @@ main {
 @media (min-width: 1024px) {
   .side-nav {
     display: flex;
-    width: 165px;
+    width: 180px;
     flex-shrink: 0;
     padding: 32px 24px;
     background: linear-gradient(
