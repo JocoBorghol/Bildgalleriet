@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maneter - Bildgalleriet</title>
+  <title>Galleri - Bildgalleriet</title>
+
+  <!-- Standardtema (dark) -->
   <script>
-  document.documentElement.setAttribute("data-theme", "dark");
-</script>
+    document.documentElement.setAttribute("data-theme", "dark");
+  </script>
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body data-category="jellyfish">
+<body>
 
   <!-- SIDHUVUD -->
   <header class="site-header">
@@ -35,9 +37,9 @@
 
     <!-- Mobilnavigation -->
     <nav class="mobile-nav" aria-label="Kategorier">
-      <a href="index.html" class="nav-gallery">Start</a>
-      <a href="gallery.html">Galleri</a>
-      <a href="jellyfish.html" aria-current="page">Maneter</a>
+      <a href="index.html">Start</a>
+      <a href="gallery.html" aria-current="page">Galleri</a>
+      <a href="jellyfish.html">Maneter</a>
       <a href="penguin.html">Pingviner</a>
       <a href="parrot.html">Papegojor</a>
       <a href="eagle.html">Örnar</a>
@@ -52,8 +54,8 @@
     <aside class="side-nav">
       <nav aria-label="Huvudnavigation">
         <a href="index.html">Start</a>
-        <a href="gallery.html">Galleri</a>
-        <a href="jellyfish.html" aria-current="page">Maneter</a>
+        <a href="gallery.html" aria-current="page">Galleri</a>
+        <a href="jellyfish.html">Maneter</a>
         <a href="penguin.html">Pingviner</a>
         <a href="parrot.html">Papegojor</a>
         <a href="eagle.html">Örnar</a>
@@ -67,44 +69,46 @@
 
       <!-- SIDINTRO -->
       <section class="page-intro">
-        <h1>Maneter</h1>
-        <p>Mjuka former som följer ljuset och strömmarna, där varje bild nästan tidlöst</p>
+        <h1>Galleri</h1>
+        <p>En samlad vy av alla bilder i galleriet, oavsett kategori</p>
       </section>
 
       <!-- Filter och sök -->
       <div class="gallery-controls">
 
-  <div class="search-row">
-    <input
-      type="search"
-      id="searchInput"
-      placeholder="Sök bilder..."
-      aria-label="Sök bilder"
-    />
+        <div class="search-row">
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Sök bilder..."
+            aria-label="Sök bilder"
+          />
 
-    <button
-      id="toggleTagsBtn"
-      type="button"
-      aria-expanded="false"
-      aria-controls="tagFilters"
-      class="toggle-tags-btn"
-    >
-      Taggar
-    </button>
-  </div>
+          <button
+            id="toggleTagsBtn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="tagFilters"
+            class="toggle-tags-btn"
+          >
+            Taggar
+          </button>
+        </div>
 
-  <div id="tagFilters" class="tag-filters is-hidden"></div>
+        <div id="tagFilters" class="tag-filters is-hidden"></div>
 
-  <button
-  id="resetFiltersBtn"
-  type="button"
-  class="reset-filters-btn is-hidden"
->
-  Rensa filter
-</button>
+        <button
+          id="resetFiltersBtn"
+          type="button"
+          class="reset-filters-btn is-hidden"
+        >
+          Rensa filter
+        </button>
+
+      </div>
 
       <!-- GALLERI -->
-      <section class="gallery" data-category="jellyfish">
+      <section class="gallery">
         <div id="galleryGrid" class="gallery-grid"></div>
       </section>
 
@@ -119,23 +123,24 @@
 
   </div>
 
+  <!-- SIDFOT -->
   <footer class="site-footer">
-  <div class="footer-inner">
+    <div class="footer-inner">
 
-    <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="about.html">Om Galleriet</a>
-    </nav>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="about.html">Om Galleriet</a>
+      </nav>
 
-    <p class="footer-copy">© 2025 Bildgalleriet</p>
+      <p class="footer-copy">© 2025 Bildgalleriet</p>
 
-  </div>
-</footer>
+    </div>
+  </footer>
 
   <!-- SCRIPT -->
-<script type="module" src="js/gallery.js"></script>
-<script src="js/theme.js" defer></script>
-<script src="js/side-nav-toggle.js" defer></script>
-<script src="js/tag.toggle.js" defer></script>
+  <script type="module" src="js/gallery.js"></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/side-nav-toggle.js" defer></script>
+  <script src="js/tag.toggle.js" defer></script>
 
 </body>
 </html>

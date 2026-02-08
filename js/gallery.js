@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loadMoreBtn = document.getElementById("loadMoreBtn");
   const loadMoreMessage = document.getElementById("loadMoreMessage");
   const resetFiltersBtn = document.getElementById("resetFiltersBtn");
+  const ANIMAL_TAGS = ["manet", "pingvin", "papegoja", "örn"];
 
   // Säkerhetskontroll
   if (!galleryGrid || !gallerySection) {
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     allImages = categoryImages;
     filteredImages = [...categoryImages].sort(sortByOrientation);
 
-    renderTags(categoryImages); // ✅ endast taggar för aktuell kategori
+    renderTags(categoryImages); //endast taggar för aktuell kategori
     renderGallery();
   });
 
@@ -115,29 +116,44 @@ document.addEventListener("DOMContentLoaded", () => {
   // Sökfält
   searchInput?.addEventListener("input", applyFilters);
 
-  // Rendera taggar
-  function renderTags(images) {
-    if (!tagContainer) return;
+// Rendera taggar
+function renderTags(images) {
+  if (!tagContainer) return;
 
-    const tags = new Set();
-    images.forEach(img => img.tags.forEach(t => tags.add(t)));
+  const tags = new Set();
 
-    tagContainer.innerHTML = "";
+  images.forEach(img => {
+    img.tags.forEach(tag => {
 
-    tags.forEach(tag => {
-      const btn = document.createElement("button");
-      btn.textContent = tag;
-      btn.classList.add("tag");
+      //gallery.html begränsas
+      if (category === null) {
+        if (ANIMAL_TAGS.includes(tag)) {
+          tags.add(tag);
+        }
+      } else {
+        //Kategorisidor: exakt som förr
+        tags.add(tag);
+      }
 
-      btn.addEventListener("click", () => {
-        activeTag = activeTag === tag ? null : tag;
-        updateActiveTag();
-        applyFilters();
-      });
-
-      tagContainer.appendChild(btn);
     });
-  }
+  });
+
+  tagContainer.innerHTML = "";
+
+  tags.forEach(tag => {
+    const btn = document.createElement("button");
+    btn.textContent = tag;
+    btn.classList.add("tag");
+
+    btn.addEventListener("click", () => {
+      activeTag = activeTag === tag ? null : tag;
+      updateActiveTag();
+      applyFilters();
+    });
+
+    tagContainer.appendChild(btn);
+  });
+}
 
   // Uppdatera aktiv tagg
   function updateActiveTag() {
