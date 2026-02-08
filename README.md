@@ -1,3 +1,7 @@
+![codecov](https://codecov.io/gh/JocoBorghol/Bildgalleriet/branch/main/graph/badge.svg)
+![tests](https://github.com/JocoBorghol/Bildgalleriet/actions/workflows/test-and-coverage.yml/badge.svg)
+
+
 # Bildgalleriet
 
 Ett responsivt bildgalleri byggt med HTML, CSS och JavaScript.
