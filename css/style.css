@@ -150,6 +150,28 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+
+  /* Rad 1: Start • Galleri */
+  .nav-primary a {
+    font-size: 2.1rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-primary a + a::before {
+    margin: 0 16px;
+    font-size: 1.4rem;
+  }
+
+  /* Rad 2: kategorier */
+  .nav-categories a {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+}
+
 .mobile-nav a {
   font-family: inherit;
   font-weight: 600;
