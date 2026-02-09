@@ -35,13 +35,21 @@
 
     <!-- Mobilnavigation -->
     <nav class="mobile-nav" aria-label="Kategorier">
-      <a href="index.html" class="nav-gallery">Start</a>
+
+    <div class="nav-primary">
+      <a href="index.html">Start</a>
       <a href="gallery.html">Galleri</a>
+    </div>
+
+    <div class="nav-categories">
       <a href="jellyfish.html" aria-current="page">Maneter</a>
       <a href="penguin.html">Pingviner</a>
       <a href="parrot.html">Papegojor</a>
       <a href="eagle.html">Örnar</a>
-    </nav>
+  </div>
+
+</nav>
+
 
   </header>
 
@@ -68,7 +76,7 @@
       <!-- SIDINTRO -->
       <section class="page-intro">
         <h1>Maneter</h1>
-        <p>Mjuka former som följer ljuset och strömmarna, där varje bild nästan tidlöst</p>
+        <p>Följ med ner i en värld där tid och rörelse nästan upphör. Maneter svävar fram som levande konstverk och skapar ett stillsamt spel av ljus, färg och former som är svårt att slita blicken från</p>
       </section>
 
       <!-- Filter och sök -->
@@ -133,9 +141,10 @@
 
   <!-- SCRIPT -->
 <script type="module" src="js/gallery.js"></script>
+<script src="js/tag.toggle.js" defer></script>
 <script src="js/theme.js" defer></script>
 <script src="js/side-nav-toggle.js" defer></script>
-<script src="js/tag.toggle.js" defer></script>
+
 
 </body>
 </html>
