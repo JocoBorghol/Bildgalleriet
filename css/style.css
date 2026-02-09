@@ -183,12 +183,6 @@ body {
   color: #fff;
 }
 
-@media (max-width: 360px) {
-  .mobile-nav a {
-    font-size: 0.7rem;
-  }
-}
-
 .mobile-nav a[aria-current="page"] {
   border-bottom: 2px solid var(--teal);
 }
